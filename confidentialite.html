@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BUMI — Politique de confidentialité</title>
+<style>
+/* Palette reprise du design system de l'app (BUMI/DesignSystem/Colors.swift)
+   pour que les pages légales ne donnent pas l'impression d'un site étranger. */
+:root {
+  --background: #F2ECDD;
+  --foreground: #3C2C20;
+  --muted: #E8E2D9;
+  --muted-foreground: #847062;
+  --terracotta: #BD4628;
+  --terracotta-light: #F6E4DF;
+  --butter: #F6EBCB;
+  --border: #E2DACF;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 20px 80px;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-text-size-adjust: 100%;
+}
+
+main { max-width: 720px; margin: 0 auto; }
+
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 0 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--terracotta);
+  text-decoration: none;
+}
+
+.tagline { color: var(--muted-foreground); font-size: 15px; margin: 4px 0 0; }
+
+h1 { font-size: 30px; line-height: 1.25; margin: 40px 0 8px; }
+h2 { font-size: 21px; margin: 40px 0 12px; padding-top: 8px; border-top: 1px solid var(--border); }
+h3 { font-size: 17px; margin: 24px 0 8px; color: var(--muted-foreground); text-transform: uppercase; letter-spacing: 0.04em; }
+
+.updated { color: var(--muted-foreground); font-size: 15px; margin: 0 0 8px; }
+
+a { color: var(--terracotta); }
+
+ul { padding-left: 22px; }
+li { margin: 6px 0; }
+
+strong { font-weight: 650; }
+
+/* Les tableaux débordent sur téléphone : ils défilent dans leur propre boîte
+   plutôt que d'élargir la page. */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; min-width: 480px; font-size: 15px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { background: var(--butter); font-weight: 650; }
+
+.callout {
+  background: var(--terracotta-light);
+  border-left: 3px solid var(--terracotta);
+  padding: 14px 18px;
+  margin: 24px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.card {
+  background: #FBF8F1;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin: 24px 0;
+}
+
+footer {
+  max-width: 720px;
+  margin: 64px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--muted-foreground);
+  font-size: 15px;
+}
+
+nav.docs { margin: 24px 0 0; }
+nav.docs a { display: block; padding: 6px 0; }
+
+/* Trous à combler avant publication. Volontairement criards : une page mise
+   en ligne avec un « à compléter » visible est moins grave qu'un oubli
+   silencieux, parce qu'on le voit tout de suite. */
+.todo {
+  background: #FFE8E3;
+  color: #A33018;
+  border: 1px dashed #BD4628;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 0.92em;
+  font-weight: 600;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="./">BUMI</a>
+  <p class="tagline">Vos recettes de famille</p>
+</header>
+
+<main>
+  <h1>Politique de confidentialité</h1>
+  <p class="updated">Dernière mise à jour : 13 août 2026</p>
+
+  <p>
+    BUMI est une application de recettes de famille. Ce document décrit, sans
+    détour, quelles données l'application collecte, pourquoi, où elles vont, et
+    comment vous pouvez les récupérer ou les effacer.
+  </p>
+
+  <div class="card">
+    <p style="margin:0 0 10px">
+      <strong>Responsable du traitement</strong><br>
+      Baptiste Haond, personne physique
+      agissant à titre non professionnel, éditeur de l'application BUMI.
+    </p>
+    <p style="margin:0 0 10px">
+      <strong>Contact</strong><br>
+      <a href="mailto:support@bumi.recipes">support@bumi.recipes</a>
+      — pour toute question relative aux données personnelles et pour
+      l'exercice des droits prévus aux articles 15 à 22 du RGPD.
+    </p>
+    <p style="margin:0 0 10px">
+      <strong>Adresse postale</strong><br>
+      Non publiée. Elle est communiquée sur demande écrite adressée à l'adresse
+      ci-dessus, ainsi qu'à toute autorité administrative ou judiciaire qui en
+      fait la demande.
+    </p>
+    <p style="margin:0">
+      <strong>Délégué à la protection des données</strong><br>
+      Aucun n'a été désigné, cette désignation n'étant pas obligatoire au regard
+      de l'article 37 du RGPD.
+    </p>
+  </div>
+
+  <h2>1. Les données que vous nous confiez</h2>
+
+  <h3>Votre compte</h3>
+  <ul>
+    <li><strong>Adresse e-mail</strong> — sert à vous identifier et à récupérer votre accès.</li>
+    <li><strong>Mot de passe</strong> — nous ne le voyons jamais. Il est haché par notre prestataire d'authentification (Supabase) et stocké sous cette forme.</li>
+    <li><strong>Nom d'utilisateur, prénom, nom, photo de profil</strong> — ce que les autres utilisateurs voient de vous.</li>
+  </ul>
+
+  <h3>Vos contenus</h3>
+  <ul>
+    <li><strong>Recettes</strong> : titre, description, ingrédients, quantités, étapes, temps de préparation et de cuisson, catégorie, photos.</li>
+    <li><strong>Carnets de recettes</strong>, <strong>favoris</strong>, <strong>liste de courses</strong>.</li>
+    <li><strong>Photos</strong> que vous importez ou prenez, y compris les photos de recettes manuscrites soumises à la reconnaissance automatique.</li>
+  </ul>
+  <p>
+    Vous choisissez pour chaque recette si elle est <strong>publique</strong>
+    (visible dans le fil et sur votre profil) ou <strong>privée</strong>
+    (visible de vous seul).
+  </p>
+
+  <h3>Vos interactions</h3>
+  <ul>
+    <li><strong>Abonnements</strong> : qui vous suivez, qui vous suit.</li>
+    <li><strong>Signalements</strong> de contenu et <strong>blocages</strong> d'utilisateurs.</li>
+    <li><strong>Corrections</strong> proposées sur les ingrédients associés aux étapes d'une recette, y compris sur les recettes d'autrui.</li>
+  </ul>
+
+  <h3>Votre usage de l'application</h3>
+  <ul>
+    <li><strong>Recettes vues et affichées</strong> dans le fil, avec la date.</li>
+  </ul>
+  <p>
+    Ces mesures servent une seule chose : classer le fil « Pour toi » de façon à
+    ne pas vous remontrer ce que vous venez de voir, et à vous proposer des
+    recettes proches de celles que vous consultez. Elles ne sont ni vendues, ni
+    partagées, ni utilisées pour de la publicité.
+  </p>
+
+  <div class="callout">
+    <strong>BUMI ne contient aucune publicité, aucun traceur publicitaire et
+    aucun outil d'analyse tiers.</strong> Rien de ce que vous faites dans
+    l'application n'est transmis à un annonceur ou à un courtier en données.
+  </div>
+
+  <h2>2. Où vont ces données</h2>
+
+  <h3>Hébergement</h3>
+  <p>
+    Toutes les données sont hébergées chez <strong>Supabase</strong> (base de
+    données, authentification, stockage des images). Supabase agit comme
+    sous-traitant : il héberge, il ne dispose d'aucun droit d'usage sur vos
+    contenus.
+  </p>
+
+  <h3>Intelligence artificielle</h3>
+  <p>
+    Deux fonctions font appel à des prestataires d'IA, et uniquement quand vous
+    les déclenchez :
+  </p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Quand</th><th>Ce qui est envoyé</th><th>À qui</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Vous photographiez une recette manuscrite ou imprimée pour la numériser</td>
+          <td>La photo</td>
+          <td><strong>Anthropic</strong> (Claude)</td>
+        </tr>
+        <tr>
+          <td>Vous créez une recette et lui associez automatiquement ses ingrédients par étape</td>
+          <td>Le texte des étapes et la liste des ingrédients</td>
+          <td><strong>Anthropic</strong> (Claude)</td>
+        </tr>
+        <tr>
+          <td>Une illustration est générée pour une recette ou un ingrédient</td>
+          <td>Le titre de la recette ou le nom de l'ingrédient</td>
+          <td><strong>Google</strong> (Gemini)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    Ces envois ne contiennent ni votre identité, ni votre e-mail, ni vos données
+    de compte. Anthropic et Google traitent ces requêtes comme sous-traitants et
+    <strong>n'utilisent pas ces contenus pour entraîner leurs modèles</strong>
+    dans le cadre de leurs offres professionnelles.
+  </p>
+  <p>Rien d'autre n'est transmis à un tiers.</p>
+
+  <h2>3. Ce que les autres voient</h2>
+  <ul>
+    <li>Votre <strong>nom d'utilisateur, prénom, nom et photo de profil</strong> sont visibles publiquement.</li>
+    <li>Vos <strong>recettes publiques</strong> sont visibles de tous les utilisateurs de l'application.</li>
+    <li>Vos <strong>recettes privées</strong>, votre <strong>liste de courses</strong>, vos <strong>favoris</strong> et vos <strong>carnets</strong> ne sont visibles que de vous.</li>
+    <li>Vos <strong>signalements</strong> ne sont jamais montrés à la personne signalée.</li>
+  </ul>
+
+  <h2>4. Combien de temps nous les gardons</h2>
+  <p>
+    Vos données sont conservées tant que votre compte existe. Quand vous
+    supprimez votre compte, elles sont <strong>effacées</strong>, pas archivées :
+  </p>
+  <ul>
+    <li>votre profil, vos recettes, vos photos, vos carnets, votre liste de courses, vos favoris et vos abonnements sont supprimés ;</li>
+    <li>les signalements que vous avez émis sont conservés de façon anonyme, le temps nécessaire au traitement des abus.</li>
+  </ul>
+  <p>
+    La suppression se fait depuis l'application :
+    <strong>Profil → Réglages → Supprimer le compte</strong>. Elle est immédiate
+    et définitive.
+  </p>
+
+  <h3>Ce que nous sommes tenus de conserver</h3>
+  <p>
+    Parce que nous hébergeons les contenus que vous publiez, la loi nous impose
+    de détenir les données permettant d'identifier les auteurs de ces contenus
+    (article 6, V de la loi n° 2004-575 du 21 juin 2004, et décret
+    n° 2021-1362 du 20 octobre 2021, qui fixe des durées allant d'un an pour
+    les données techniques de connexion à cinq ans pour l'identité civile).
+  </p>
+  <p>
+    En pratique, nous ne conservons de vous que ce que vous nous avez confié :
+    votre adresse e-mail et les informations de votre compte, jusqu'à sa
+    suppression. Nous ne tenons aucun registre d'adresses IP ni de journal de
+    connexion de notre côté ; les journaux techniques de notre hébergeur sont
+    conservés par lui quelques jours seulement, puis effacés.
+  </p>
+  <p>
+    Nous répondons aux réquisitions de l'autorité judiciaire dans la limite de
+    ce que nous détenons effectivement à la date de la demande.
+  </p>
+
+  <h2>5. Vos droits</h2>
+  <p>
+    Conformément aux articles 15 à 22 du RGPD, vous disposez d'un droit
+    d'accès, de rectification, d'effacement, de limitation, d'opposition
+    (article 21) et de portabilité de vos données. Lorsqu'un traitement repose
+    sur votre consentement, vous pouvez le retirer à tout moment
+    (article 7, § 3), sans que cela remette en cause ce qui a été fait avant.
+  </p>
+  <ul>
+    <li><strong>Rectifier</strong> : depuis l'application (Profil → Modifier le profil, ou en éditant vos recettes).</li>
+    <li><strong>Effacer</strong> : depuis l'application (Réglages → Supprimer le compte).</li>
+    <li><strong>Accéder à vos données ou les récupérer dans un format lisible</strong> : écrivez à <a href="mailto:support@bumi.recipes">support@bumi.recipes</a>. Nous répondons sous 30 jours.</li>
+  </ul>
+  <p>
+    Vous pouvez également, en application de l'article 77 du RGPD, introduire
+    une réclamation auprès de la CNIL —
+    3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07,
+    <a href="https://www.cnil.fr">www.cnil.fr</a>.
+  </p>
+
+  <h2>6. Sécurité</h2>
+  <p>
+    L'accès aux données est contrôlé ligne par ligne au niveau de la base
+    (<em>Row Level Security</em>) : les règles font qu'un utilisateur ne peut
+    lire ou modifier que ce qui lui appartient ou ce qui a été rendu public. Les
+    échanges entre l'application et le serveur sont chiffrés (HTTPS/TLS).
+  </p>
+  <p>
+    Aucun système n'est infaillible. En cas de violation de données susceptible
+    d'engendrer un risque pour vos droits, nous vous en informerons ainsi que
+    l'autorité compétente, dans les délais prévus par la réglementation.
+  </p>
+
+  <h2>7. Enfants</h2>
+  <p>
+    BUMI n'est pas destinée aux enfants de moins de 13 ans, et nous ne
+    collectons pas sciemment leurs données. Si vous constatez qu'un enfant nous
+    a transmis des données personnelles, écrivez-nous et nous les supprimerons.
+  </p>
+
+  <h2>8. Modifications</h2>
+  <p>
+    Toute modification de cette politique sera publiée sur cette page, avec une
+    nouvelle date de mise à jour. Les changements substantiels vous seront
+    signalés dans l'application.
+  </p>
+</main>
+
+<footer>
+  Une question ? <a href="mailto:support@bumi.recipes">support@bumi.recipes</a><br>
+  BUMI — <a href="./">Accueil</a> · <a href="conditions.html">Conditions d'utilisation</a>
+</footer>
+
+</body>
+</html>

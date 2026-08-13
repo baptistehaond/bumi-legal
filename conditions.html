@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BUMI — Conditions d'utilisation</title>
+<style>
+/* Palette reprise du design system de l'app (BUMI/DesignSystem/Colors.swift)
+   pour que les pages légales ne donnent pas l'impression d'un site étranger. */
+:root {
+  --background: #F2ECDD;
+  --foreground: #3C2C20;
+  --muted: #E8E2D9;
+  --muted-foreground: #847062;
+  --terracotta: #BD4628;
+  --terracotta-light: #F6E4DF;
+  --butter: #F6EBCB;
+  --border: #E2DACF;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 20px 80px;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-text-size-adjust: 100%;
+}
+
+main { max-width: 720px; margin: 0 auto; }
+
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 0 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--terracotta);
+  text-decoration: none;
+}
+
+.tagline { color: var(--muted-foreground); font-size: 15px; margin: 4px 0 0; }
+
+h1 { font-size: 30px; line-height: 1.25; margin: 40px 0 8px; }
+h2 { font-size: 21px; margin: 40px 0 12px; padding-top: 8px; border-top: 1px solid var(--border); }
+h3 { font-size: 17px; margin: 24px 0 8px; color: var(--muted-foreground); text-transform: uppercase; letter-spacing: 0.04em; }
+
+.updated { color: var(--muted-foreground); font-size: 15px; margin: 0 0 8px; }
+
+a { color: var(--terracotta); }
+
+ul { padding-left: 22px; }
+li { margin: 6px 0; }
+
+strong { font-weight: 650; }
+
+/* Les tableaux débordent sur téléphone : ils défilent dans leur propre boîte
+   plutôt que d'élargir la page. */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; min-width: 480px; font-size: 15px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { background: var(--butter); font-weight: 650; }
+
+.callout {
+  background: var(--terracotta-light);
+  border-left: 3px solid var(--terracotta);
+  padding: 14px 18px;
+  margin: 24px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.card {
+  background: #FBF8F1;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin: 24px 0;
+}
+
+footer {
+  max-width: 720px;
+  margin: 64px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--muted-foreground);
+  font-size: 15px;
+}
+
+nav.docs { margin: 24px 0 0; }
+nav.docs a { display: block; padding: 6px 0; }
+
+/* Trous à combler avant publication. Volontairement criards : une page mise
+   en ligne avec un « à compléter » visible est moins grave qu'un oubli
+   silencieux, parce qu'on le voit tout de suite. */
+.todo {
+  background: #FFE8E3;
+  color: #A33018;
+  border: 1px dashed #BD4628;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 0.92em;
+  font-weight: 600;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="./">BUMI</a>
+  <p class="tagline">Vos recettes de famille</p>
+</header>
+
+<main>
+  <h1>Conditions d'utilisation</h1>
+  <p class="updated">Dernière mise à jour : 13 août 2026</p>
+
+  <p>
+    En créant un compte sur BUMI, vous acceptez ces conditions. Si vous n'en
+    acceptez pas les termes, n'utilisez pas l'application.
+  </p>
+
+  <div class="card">
+    <p style="margin:0">
+      <strong>Éditeur :</strong>
+      Baptiste Haond, éditeur non professionnel.<br>
+      <strong>Contact :</strong>
+      <a href="mailto:support@bumi.recipes">support@bumi.recipes</a>
+    </p>
+  </div>
+
+  <h2>1. Ce qu'est BUMI</h2>
+  <p>
+    BUMI est une application qui permet d'écrire, de conserver et de partager
+    des recettes de cuisine. Elle est gratuite. Vous devez avoir
+    <strong>au moins 13 ans</strong> pour créer un compte.
+  </p>
+
+  <h2>2. Votre compte</h2>
+  <p>
+    Vous êtes responsable de votre mot de passe et de ce qui se passe sous votre
+    compte. Prévenez-nous immédiatement si vous pensez qu'il a été compromis.
+  </p>
+  <p>
+    Un compte par personne. Vous ne pouvez pas usurper l'identité d'un tiers, ni
+    créer un compte au nom de quelqu'un d'autre sans son accord.
+  </p>
+
+  <h2>3. Vos contenus vous appartiennent</h2>
+  <p>
+    Les recettes, textes et photos que vous publiez restent
+    <strong>votre propriété</strong>.
+  </p>
+  <p>
+    En les publiant en mode <strong>public</strong>, vous nous accordez une
+    licence non exclusive, mondiale et gratuite pour les héberger, les afficher
+    dans l'application et les proposer aux autres utilisateurs — strictement
+    dans le cadre du fonctionnement du service. Cette licence prend fin lorsque
+    vous supprimez le contenu ou votre compte.
+  </p>
+  <p>Nous ne revendons pas vos contenus et ne les exploitons pas en dehors de l'application.</p>
+  <p>
+    Vous garantissez que vous détenez les droits sur ce que vous publiez. Ne
+    recopiez pas les recettes protégées d'un livre ou d'un site sans
+    autorisation : une liste d'ingrédients n'est généralement pas protégeable,
+    mais un texte de présentation, une photographie et une mise en forme
+    originale le sont.
+  </p>
+
+  <h2>4. Tolérance zéro pour les contenus et comportements abusifs</h2>
+  <p><strong>Sont strictement interdits sur BUMI :</strong></p>
+  <ul>
+    <li>les contenus haineux, discriminatoires, ou incitant à la violence ;</li>
+    <li>le harcèlement, les menaces, l'intimidation ;</li>
+    <li>les contenus sexuellement explicites ou pornographiques ;</li>
+    <li>les contenus violents, choquants ou glorifiant l'automutilation ;</li>
+    <li>les contenus illégaux, ou promouvant des activités illégales ;</li>
+    <li>l'usurpation d'identité ;</li>
+    <li>le spam, la publicité non sollicitée, les liens frauduleux ;</li>
+    <li>la publication de données personnelles d'un tiers sans son consentement ;</li>
+    <li>toute recette ou instruction présentant un danger délibéré pour la santé.</li>
+  </ul>
+
+  <div class="callout">
+    <strong>Cette règle ne souffre aucune exception, et son application est immédiate.</strong>
+  </div>
+
+  <h3>Signaler un contenu ou un comportement</h3>
+  <p>
+    Chaque recette et chaque profil comporte un menu permettant de
+    <strong>signaler</strong> le contenu ou <strong>bloquer</strong> son auteur.
+    Bloquer quelqu'un fait disparaître ses recettes de vos fils, tout de suite.
+  </p>
+  <p>
+    Vous pouvez également nous écrire à
+    <a href="mailto:support@bumi.recipes">support@bumi.recipes</a>.
+  </p>
+
+  <h3>Notre engagement</h3>
+  <p>
+    Nous examinons chaque signalement et nous agissons
+    <strong>dans les 24 heures</strong>. Un contenu qui enfreint ces règles est
+    <strong>retiré</strong>, et le compte à l'origine de la publication est
+    <strong>suspendu ou supprimé</strong>, sans avertissement préalable en cas de
+    manquement grave.
+  </p>
+
+  <h2>5. Sécurité alimentaire</h2>
+  <p>
+    Les recettes publiées sur BUMI sont écrites par des utilisateurs. Elles ne
+    sont ni vérifiées, ni validées par un professionnel.
+  </p>
+  <p>
+    <strong>Vérifiez toujours les allergènes, les temps et les températures de
+    cuisson, et la fraîcheur de vos ingrédients.</strong> L'éditeur ne saurait
+    être tenu responsable d'une intolérance, d'une allergie ou d'une
+    intoxication liée à la préparation d'une recette trouvée dans l'application.
+  </p>
+
+  <h2>6. Reconnaissance automatique et illustrations générées</h2>
+  <p>
+    L'application peut lire une photo de recette manuscrite pour la mettre en
+    forme, associer automatiquement des ingrédients aux étapes, et générer une
+    illustration lorsqu'aucune photo n'est fournie.
+  </p>
+  <p>
+    Ces traitements sont <strong>automatiques et faillibles</strong>. Relisez
+    toujours ce qui a été reconnu avant de vous en servir en cuisine :
+    quantités, unités, temps. Une illustration générée est une image d'agrément,
+    pas la photo de votre plat.
+  </p>
+
+  <h2>7. Ce que nous pouvons faire</h2>
+  <p>
+    Nous pouvons suspendre ou supprimer un compte, retirer un contenu, ou
+    restreindre l'accès au service en cas de manquement à ces conditions, sans
+    préavis lorsque la gravité le justifie.
+  </p>
+  <p>
+    Le service est fourni « en l'état ». Nous faisons ce qu'il faut pour qu'il
+    fonctionne, mais nous ne garantissons ni une disponibilité ininterrompue, ni
+    l'absence de bug, ni la conservation éternelle de vos données.
+    <strong>Conservez une copie de ce à quoi vous tenez.</strong>
+  </p>
+
+  <h2>8. Résiliation</h2>
+  <p>
+    Vous pouvez supprimer votre compte à tout moment depuis
+    <strong>Profil → Réglages → Supprimer le compte</strong>. La suppression est
+    immédiate et définitive.
+  </p>
+
+  <h2>9. Données personnelles</h2>
+  <p>
+    Le traitement de vos données personnelles est décrit dans notre
+    <a href="confidentialite.html">politique de confidentialité</a>.
+  </p>
+
+  <h2>10. Droit applicable</h2>
+  <p>
+    Ces conditions sont régies par le droit français. À défaut de résolution
+    amiable, les tribunaux français sont compétents.
+  </p>
+
+  <h2>11. App Store</h2>
+  <p>
+    L'application est distribuée par l'App Store. Ces conditions vous lient à
+    l'éditeur, et non à Apple. Apple n'est pas responsable de l'application ni
+    de son contenu, mais est <strong>tiers bénéficiaire</strong> de ces
+    conditions et peut en demander l'application à votre égard.
+  </p>
+
+  <h2>12. Modifications</h2>
+  <p>
+    Ces conditions peuvent être mises à jour. Les changements substantiels vous
+    seront signalés dans l'application. Continuer à utiliser BUMI après une mise
+    à jour vaut acceptation.
+  </p>
+</main>
+
+<footer>
+  Une question ? <a href="mailto:support@bumi.recipes">support@bumi.recipes</a><br>
+  BUMI — <a href="./">Accueil</a> · <a href="confidentialite.html">Politique de confidentialité</a>
+</footer>
+
+</body>
+</html>

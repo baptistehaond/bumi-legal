@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BUMI — Informations légales</title>
+<style>
+/* Palette reprise du design system de l'app (BUMI/DesignSystem/Colors.swift)
+   pour que les pages légales ne donnent pas l'impression d'un site étranger. */
+:root {
+  --background: #F2ECDD;
+  --foreground: #3C2C20;
+  --muted: #E8E2D9;
+  --muted-foreground: #847062;
+  --terracotta: #BD4628;
+  --terracotta-light: #F6E4DF;
+  --butter: #F6EBCB;
+  --border: #E2DACF;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 20px 80px;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-text-size-adjust: 100%;
+}
+
+main { max-width: 720px; margin: 0 auto; }
+
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 0 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--terracotta);
+  text-decoration: none;
+}
+
+.tagline { color: var(--muted-foreground); font-size: 15px; margin: 4px 0 0; }
+
+h1 { font-size: 30px; line-height: 1.25; margin: 40px 0 8px; }
+h2 { font-size: 21px; margin: 40px 0 12px; padding-top: 8px; border-top: 1px solid var(--border); }
+h3 { font-size: 17px; margin: 24px 0 8px; color: var(--muted-foreground); text-transform: uppercase; letter-spacing: 0.04em; }
+
+.updated { color: var(--muted-foreground); font-size: 15px; margin: 0 0 8px; }
+
+a { color: var(--terracotta); }
+
+ul { padding-left: 22px; }
+li { margin: 6px 0; }
+
+strong { font-weight: 650; }
+
+/* Les tableaux débordent sur téléphone : ils défilent dans leur propre boîte
+   plutôt que d'élargir la page. */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 16px 0; }
+table { border-collapse: collapse; width: 100%; min-width: 480px; font-size: 15px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { background: var(--butter); font-weight: 650; }
+
+.callout {
+  background: var(--terracotta-light);
+  border-left: 3px solid var(--terracotta);
+  padding: 14px 18px;
+  margin: 24px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.card {
+  background: #FBF8F1;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin: 24px 0;
+}
+
+footer {
+  max-width: 720px;
+  margin: 64px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--muted-foreground);
+  font-size: 15px;
+}
+
+nav.docs { margin: 24px 0 0; }
+nav.docs a { display: block; padding: 6px 0; }
+
+/* Trous à combler avant publication. Volontairement criards : une page mise
+   en ligne avec un « à compléter » visible est moins grave qu'un oubli
+   silencieux, parce qu'on le voit tout de suite. */
+.todo {
+  background: #FFE8E3;
+  color: #A33018;
+  border: 1px dashed #BD4628;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 0.92em;
+  font-weight: 600;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="./">BUMI</a>
+  <p class="tagline">Vos recettes de famille</p>
+</header>
+
+<main>
+  <h1>Informations légales</h1>
+
+  <nav class="docs">
+    <a href="confidentialite.html">→ Politique de confidentialité</a>
+    <a href="conditions.html">→ Conditions d'utilisation</a>
+  </nav>
+
+  <div class="card">
+    <h3 style="margin-top:0">Nous contacter</h3>
+    <p style="margin:0">
+      Pour toute question, demande d'accès à vos données, ou pour signaler un
+      contenu : <a href="mailto:support@bumi.recipes">support@bumi.recipes</a>
+    </p>
+    <p style="margin:8px 0 0; color:var(--muted-foreground); font-size:15px">
+      Nous répondons aux signalements sous 24 heures.
+    </p>
+  </div>
+
+  <h2>Éditeur</h2>
+  <p>
+    Le présent service est édité à titre non professionnel par une personne
+    physique qui, en application du II de l'article 1-1 de la loi n° 2004-575 du
+    21 juin 2004 pour la confiance dans l'économie numérique, a choisi de
+    préserver son anonymat. Ses éléments d'identification personnelle mentionnés
+    au I du même article ont été communiqués au fournisseur de services
+    d'hébergement désigné ci-dessous.
+  </p>
+  <p>
+    L'application est gratuite et ne comporte ni publicité, ni achat intégré.
+  </p>
+
+  <h3>Directeur de la publication</h3>
+  <p>
+    L'éditeur, anonymat préservé dans les conditions du II de l'article 1-1
+    précité.
+  </p>
+
+  <h2>Hébergement</h2>
+  <p>
+    <strong>Données de l'application</strong> — Supabase,
+    <a href="https://supabase.com">supabase.com</a><br>
+    SUPABASE PTE. LTD., 65 Chulia Street #38-02/03, OCBC Centre, Singapore 049513
+  </p>
+  <p>
+    <strong>Ces pages</strong> — GitHub Pages, GitHub, Inc.,
+    <a href="https://github.com">github.com</a><br>
+    GitHub, Inc., 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, États-Unis
+  </p>
+
+  <h2>Points de contact</h2>
+  <p>
+    En application des articles 11 et 12 du règlement (UE) 2022/2065, le point
+    de contact unique — pour les destinataires du service comme pour les
+    autorités des États membres, la Commission et le comité européen des
+    services numériques — est l'adresse
+    <a href="mailto:support@bumi.recipes">support@bumi.recipes</a>.
+  </p>
+  <p>
+    Les échanges y sont traités par une personne physique, et non par un
+    dispositif exclusivement automatisé. Langues utilisables : le
+    <strong>français</strong> et l'<strong>anglais</strong>.
+  </p>
+
+  <h2>Droit de réponse</h2>
+  <p>
+    Toute personne nommée ou désignée dans le service dispose d'un droit de
+    réponse (III de l'article 1-1 de la loi précitée). La demande peut être
+    adressée au fournisseur de services d'hébergement, qui la transmet sans
+    délai au directeur de la publication, ou directement à
+    <a href="mailto:support@bumi.recipes">support@bumi.recipes</a>.
+    Elle doit être présentée dans les trois mois suivant la mise à disposition
+    du contenu.
+  </p>
+
+  <h2>Signaler un contenu illicite</h2>
+  <p>
+    Conformément à l'article 16 du règlement (UE) 2022/2065 (DSA), tout contenu
+    supposé illicite peut être signalé depuis l'application (menu « Signaler »
+    présent sur chaque recette et chaque profil) ou par courrier électronique à
+    <a href="mailto:support@bumi.recipes">support@bumi.recipes</a>.
+  </p>
+  <p>Pour être traitée, une notification doit comporter :</p>
+  <ul>
+    <li>les motifs pour lesquels le contenu est considéré comme illicite ;</li>
+    <li>sa localisation exacte dans l'application (titre de la recette, nom du compte) ;</li>
+    <li>vos nom et adresse électronique ;</li>
+    <li>une déclaration confirmant votre bonne foi.</li>
+  </ul>
+  <p>
+    Les contenus manifestement illicites sont retirés promptement, et les
+    activités illicites graves signalées aux autorités compétentes
+    (<a href="https://www.internet-signalement.gouv.fr">PHAROS</a>).
+  </p>
+</main>
+
+<footer>
+  BUMI — <a href="confidentialite.html">Confidentialité</a> ·
+  <a href="conditions.html">Conditions</a>
+</footer>
+
+</body>
+</html>
